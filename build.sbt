@@ -1,21 +1,24 @@
-name := "swagger-play2"
+name := "play2"
 organization := "io.swagger"
 
-scalaVersion := "2.13.1"
+scalaVersion := "2.13.4"
 
 crossScalaVersions := Seq(scalaVersion.value, "2.12.10")
 
-val PlayVersion = "2.7.3"
+val PlayVersion = "2.8.7"
 val SwaggerVersion = "1.5.24"
 val Specs2Version = "4.6.0"
 
 libraryDependencies ++= Seq(
   "com.typesafe.play" %% "play" % PlayVersion,
   "com.typesafe.play" %% "routes-compiler" % PlayVersion,
+
+  "com.fasterxml.jackson.module" %% "jackson-module-scala" % "2.12.0",
+
   "io.swagger" % "swagger-core" % SwaggerVersion,
   "io.swagger" %% "swagger-scala-module" % "1.0.6",
-  "com.fasterxml.jackson.module" %% "jackson-module-scala" % "2.9.9",
-  "org.scala-lang.modules" %% "scala-collection-compat" % "2.1.2",
+
+  "org.scala-lang.modules" %% "scala-collection-compat" % "2.3.2",
   "org.slf4j" % "slf4j-api" % "1.7.21",
 
   "com.typesafe.play" %% "play-ebean" % "5.0.2" % "test",
