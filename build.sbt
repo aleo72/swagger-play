@@ -6,7 +6,7 @@ scalaVersion := "2.13.4"
 crossScalaVersions := Seq(scalaVersion.value, "2.12.10")
 
 val PlayVersion = "2.8.7"
-val SwaggerVersion = "1.5.24"
+val SwaggerVersion = "1.6.2"
 val Specs2Version = "4.6.0"
 
 libraryDependencies ++= Seq(
